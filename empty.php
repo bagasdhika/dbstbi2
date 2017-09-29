@@ -12,7 +12,12 @@ $query2= "DELETE FROM `upload` WHERE 1";
  
 $hasil1 = mysql_query ($query1);
 $hasil2 = mysql_query ($query2);
- 
+
+$files = glob('files/*.pdf'); //get all file names
+foreach($files as $file){
+    if(is_file($file))
+    unlink($file); //delete file
+}
 echo "Data telah dihapus.";
 ?>
 <br>
