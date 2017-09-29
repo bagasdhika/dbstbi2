@@ -7,9 +7,11 @@ $host = 'localhost';
   $konek_db = mysql_connect($host, $user, $password);    
   $find_db = mysql_select_db($database) ;
 
-$query = "DELETE FROM `dokumen` WHERE 1";
+$query1 = "DELETE FROM `dokumen` WHERE 1";
+$query2= "DELETE FROM `upload` WHERE 1";
  
-$hasil = mysql_query ($query);
+$hasil1 = mysql_query ($query1);
+$hasil2 = mysql_query ($query2);
  
 echo "Data telah dihapus.";
 ?>
