@@ -9,7 +9,7 @@ mysql_select_db($database);
 //hitung index
 mysql_query("TRUNCATE TABLE tbindex");
 $resn = mysql_query("INSERT INTO `tbindex`(`Term`, `DocId`, `Count`) SELECT `token`,`nama_file`,count(*) FROM `dokumen` group by `nama_file`,token");
-	$n = mysql_num_rows($resn);
+	//$n = mysql_num_rows($resn);
 	
 
 //berapa jumlah DocId total?, n
