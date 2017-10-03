@@ -1,3 +1,10 @@
+<html>
+<title>Form Empty</title>
+<body align="center" style="background-color: orange">
+<center><img src="img3.png" style="width:900px;height:150px;">
+<br>
+<br>
+<h2>Halaman Pengosongan</h2>
 <?php
 $host = 'localhost';
   $user = 'root';      
@@ -21,4 +28,8 @@ foreach($files as $file){
 echo "Data telah dihapus.";
 ?>
 <br>
-<a> Kembali ke tabel ? </a> <a href="hasil_tokenisasi.php"> YA </a>
+<a> Kembali ke tabel ? </a> <br>
+<br>
+<a href="index.php"><input type="button" value="Ya"/></a> <a href="empty.php"><input type="button" value="Tidak"/></a>
+</body></center>
+</html>
