@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>Hitung Vektor</title>
+<body align="center" style="background-color: pink">
+<center><img src="img3.png" style="width:900px;height:150px;"><br>
+<br>
+<h2>Hitung Vektor</h2>
 <?php
 $host='localhost';
 $user='root';
@@ -35,12 +42,8 @@ mysql_query("TRUNCATE TABLE tbvektor");
 	} //end while $rowDocId
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hitung Vektor</title>
-</head>
-<body>
-<center><a href="index.php" style="background-color:cyan">Home</center>
-</body>
+<br>
+<br>
+<a href="index.php"><input type="button" value="<< Kembali"/></a>
+</body></center>
 </html>
