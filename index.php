@@ -6,18 +6,16 @@ require_once('Enhanced_CS.php');
 <head>
 	<title>Mesin Pencari</title>
 </head>
-<body>
-<center><a href="upload.php" style="background-color:cyan">Upload File</a> or <a href="hasil_tokenisasi.php" style="background-color:cyan">Hasil Tokenisasi</a>
-<br/>
-<br/>
-<a href="hitungvektor.php" style="background-color:cyan">Hitung Vektor</a> or <a href="hitungbobot.php" style="background-color:cyan">Hitung Bobot</a>
+<body align="center" style="background-color: blue">
+<center><img src="img3.png" style="width:900px;height:150px;">
+<h3>TUGAS SISTEM TEMU KEMBALI INFORMASI</h3>
+<h3>PENGUNGGAH FILE PDF, TOKENISASI, STOPWORD REMOVAL, DAN STEMMING</h3>
+<h4>UNIVERSITAS STIKUBANK SEMARANG</h4>
 <h3>PENCARIAN KATA DASAR</h3>
 <form method="post" action="">
 <input type="text" name="kata" id="kata" size="20" value="<?php if(isset($_POST['kata'])){ echo $_POST['kata']; }else{ echo '';}?>">
 <input class="btnForm" type="submit" name="submit" value="Submit"/>
-</center>
 </form>
-<center>
 <?php
 if(isset($_POST['kata'])){
 	$teksAsli = $_POST['kata'];
@@ -25,11 +23,17 @@ if(isset($_POST['kata'])){
 	$stemming = Enhanced_CS($teksAsli);
 	echo "Kata dasar : ".$stemming.'<br/>';
 }
-?></center><br/>
+?><br/>
 <br/>
-<br/>
-<br/>
-<br/>
-
+<a href="upload.php"><input type="button" value="Upload File"/></a>
+<a href="hasil_tokenisasi.php"><input type="button" value="Hasil Tokenisasi"/></a>
+<a href="hitungvektor.php"><input type="button" value="Hitung Vektor"/></a>
+<a href="hitungbobot.php"><input type="button" value="Hitung Bobot"/></a>
+<a href="query.php"><input type="button" value="Query Boolean"/></a>
+<a href="awalquery.php"><input type="button" value="querytf2"/></a>
+<a href="download.php"><input type="button" value="Download File"/></a>
+<h3>DHIKA BAGAS WHISNU AJI</h3>
+<h3>15.01.53.0044</h3>
 </body>
+</center>
 </html>
