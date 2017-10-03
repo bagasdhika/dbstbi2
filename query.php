@@ -3,7 +3,8 @@
 <body align="center" style="background-color: rose">
 <center><img src="img3.png" style="width:900px;height:150px;"><br>
 <br>
-<h2>Simpan PDF<h2>
+<h2>Simpan PDF</h2>
+  
 <?php
 // Tentukan folder file yang boleh di download
 $folder = "files/";
@@ -24,7 +25,8 @@ else {
   fclose($fp);
   print $data;
 }
-?><!doctype html>
+?>
+  <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
