@@ -1,4 +1,8 @@
-
+<html>
+<title>Query</title>
+<body align="center" style="background-color: purple">
+<center><img src="img3.png" style="width:900px;height:150px;">
+<h2>Query</h2>
 <?php
 ////
 function hitungsim($query) {
@@ -18,7 +22,7 @@ mysql_select_db($database);
 	$n = $rown['n'];
 	//echo "hasil tbvektor";
 	
-	print_r($resn);
+	//print_r($resn);
 	
 	//terapkan preprocessing terhadap $query
 	$aquery = explode(" ", $query);
@@ -153,4 +157,7 @@ $resCache = mysql_query("SELECT *  FROM tbcache WHERE Query = '$keyword' ORDER B
 		} //end while
 		}
 
-?>
+?><br>
+<br><a href="index.php"><input type="button" value="<< Kembali"/></a>
+</body></center>
+</html>
