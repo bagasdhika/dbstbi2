@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>Hitung Bobot</title>
+<body align="center" style="background-color: grey">
+<center><img src="img3.png" style="width:900px;height:150px;"><br>
+<br>
+<h2>Hitung Bobot</h2>
 <?php
 $host='localhost';
 $user='root';
@@ -41,12 +48,8 @@ $resn = mysql_query("INSERT INTO `tbindex`(`Term`, `DocId`, `Count`) SELECT `tok
 
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hitung Vektor</title>
-</head>
-<body>
-<center><a href="index.php" style="background-color:cyan">Home</center>
-</body>
+<br>
+<br>
+<a href="index.php"><input type="button" value="<< Kembali"/></a>
+</body></center>
 </html>
