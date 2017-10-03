@@ -1,5 +1,5 @@
 <html>
-<title>Aplikasi Download</title>
+<title>Hasil Query Boolean</title>
 <body align="center" style="background-color: cyan">
 <center><img src="img3.png" style="width:900px;height:150px;"><br>
 <br>
