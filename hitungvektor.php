@@ -24,9 +24,9 @@ else {
   fclose($fp);
   print $data;
 }
-?><!doctype html>
-<html>
-<head>
+?>
+  <!doctype html>
+  <head>
 <meta charset="utf-8">
 </head>
 </body></center>
