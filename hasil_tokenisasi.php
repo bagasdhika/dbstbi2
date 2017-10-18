@@ -9,14 +9,11 @@ $host = 'localhost';
   $find_db = mysql_select_db($database) ;
 ?>
 
+<center>
+<a href="upload.php"><input type="button" value="Upload"/></a> <a href="index.php"><input type="button" value="<< Kembali"/></a>
+<a href="empty.php"><input type="button" value="KOSONGKAN"/></a> 
+<h2>HASIL TOKENISASI DAN STEMMING</h2>
 
-<a href="upload.php" style="background-color:yellow">Upload File</a> or <a href="index.php" style="background-color:yellow">Home</a><br>
-<a>Kosongkan Tabel : </a> <a href="empty.php" color="red"> KOSONGKAN </a> 
-
-<center> 
-HASIL TOKENISASI DAN STEMMING
-<br>
-<br>
 
 <!-- ///////////////////////////// Script untuk membuat tabel///////////////////////////////// -->
 
