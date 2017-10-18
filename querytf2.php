@@ -1,8 +1,8 @@
 <html>
-<title>Query</title>
-<body align="center" style="background-color: purple">
+<title>Query2tf</title>
+<body align="center" style="background-color: aqua">
 <center><img src="img3.png" style="width:900px;height:150px;">
-<h2>Query</h2>
+<h2>Query2tf</h2>
 <?php
 ////
 function hitungsim($query) {
@@ -39,7 +39,7 @@ mysql_select_db($database);
 		$rowNTerm = mysql_fetch_array($resNTerm);	
 		$NTerm = $rowNTerm['N'] ;
 		
-		$idf = log($n/$NTerm);
+		$idf = @log($n/$NTerm);
 		
 		//simpan di array		
 		$aBobotQuery[] = $idf;
@@ -108,7 +108,7 @@ $host='localhost';
 $user='root';
 $pass='';
 $database='dbstbi';
-$keyword=$_POST[keyword];;
+$keyword=@$_POST['keyword'];;
 $conn=mysql_connect($host,$user,$pass);
 mysql_select_db($database);
 $resCache = mysql_query("SELECT *  FROM tbcache WHERE Query = '$keyword' ORDER BY Value DESC");
