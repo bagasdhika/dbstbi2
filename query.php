@@ -1,35 +1,14 @@
 <html>
-<title>Aplikasi Simpan</title>
-<body align="center" style="background-color: rose">
-<center><img src="img3.png" style="width:900px;height:150px;"><br>
-<br>
-<h2>Simpan PDF</h2>
-  
-<?php
-// Tentukan folder file yang boleh di download
-$folder = "files/";
-// Lalu cek menggunakan fungsi file_exist
-if (!file_exists($folder.$_GET['file'])) {
-  echo "<h1>Access forbidden!</h1>
-      <p> Anda tidak diperbolehkan mendownload file ini.</p>";
-  exit;
-}
-
-// Apabila mendownload file di folder files
-else {
-  header("Content-Type: octet/stream");
-  header("Content-Disposition: attachment; 
-  filename=\"".$_GET['file']."\"");
-  $fp = fopen($folder.$_GET['file'], "r");
-  $data = fread($fp, filesize($folder.$_GET['file']));
-  fclose($fp);
-  print $data;
-}
-?>
-  <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-</head>
-</body></center>
+<title>Query Boolean</title>
+<body align="center" style="background-color: tomato">
+<center><img src="img3.png" style="width:900px;height:150px;">
+<h2>Query Boolean</h2>
+<form enctype="multipart/form-data" method="POST" action="hasilquery.php">
+<b>Masukan Keyword : </b><br>
+<br><input type="text" name="katakunci"><br><br>
+<input type=submit>
+</form>
+<a href="index.php"><input type="button" value="<< Kembali"/></a>
+</body>
+</center>
 </html>
