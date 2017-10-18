@@ -21,10 +21,10 @@ else {
 ?><!doctype html>
 <html>
 <head>
+<title>Aplikasi Simpan</title>
 <meta charset="utf-8">
-<title>Untitled Document</title>
 </head>
-
-<body>
-</body>
+<body align="center" style="background-color: rose">
+<h2>Simpan PDF</h2>
+</body></center>
 </html>
